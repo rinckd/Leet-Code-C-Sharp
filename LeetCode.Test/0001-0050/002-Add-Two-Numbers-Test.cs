@@ -9,21 +9,19 @@ public class _002_Add_Two_Numbers_Test {
     [Fact]
     public void AddTwoNumbersTest_General()
     {
-        var link = TestHelper.GenerateList(new int[] { 2, 4, 3 });
-
+        var link = TestHelper.GenerateList(new[] { 2, 4, 3 });
         var result = _002_Add_Two_Numbers.AddTwoNumbers(link, link);
 
-        AssertHelper.AssertLinkList(new int[] { 4, 8, 6 }, result);
+        AssertHelper.AssertLinkList(new[] { 4, 8, 6 }, result);
     }
     
     [Fact]
     public void AddTwoNumbersTest_General2()
     {
-        var link = TestHelper.GenerateList(new int[] { 2, 4, 3 });
-        var link2 = TestHelper.GenerateList(new int[] { 5, 6, 4 });
-
+        var link = TestHelper.GenerateList(new[] { 2, 4, 3 });
+        var link2 = TestHelper.GenerateList(new[] { 5, 6, 4 });
         var result = _002_Add_Two_Numbers.AddTwoNumbers(link, link2);
 
-        AssertHelper.AssertLinkList(new int[] { 7, 0, 8 }, result);
+        AssertHelper.AssertLinkList(new[] { 7, 0, 8 }, result);
     }
 }
